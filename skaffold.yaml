@@ -4,11 +4,12 @@ metadata:
   name: growth-quotient-ingestion
 build:
   artifacts:
-  - image: growth-quotient-ingestion
+  - image: gcr.io/cs-poc-h94wicd2pgi3dpfwznvm4vm/growth-quotient-ingestion
     docker:
       dockerfile: Dockerfile
-  googleCloudBuild:
-    projectId: cs-poc-h94wicd2pgi3dpfwznvm4vm
+  googleCloudBuild: {}
+deploy:
+  kubectl: {}
 manifests:
   rawYaml:
     - k8s.yaml
