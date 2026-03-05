@@ -3,6 +3,7 @@ kind: Config
 metadata:
   name: growth-quotient-ingestion
 build:
+  googleCloudBuild: {}
   artifacts:
   - image: growth-quotient-ingestion
     docker:
