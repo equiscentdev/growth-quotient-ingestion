@@ -2,6 +2,11 @@ apiVersion: skaffold/v4beta13
 kind: Config
 metadata:
   name: growth-quotient-ingestion
+build:
+  artifacts:
+  - image: growth-quotient-ingestion
+    docker:
+      dockerfile: Dockerfile
 manifests:
   rawYaml:
     - k8s.yaml
