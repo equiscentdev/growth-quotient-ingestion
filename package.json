@@ -1,0 +1,10 @@
+{
+  "name": "gq-submit-response",
+  "version": "1.0.0",
+  "description": "API Gateway for Growth Quotient Survey",
+  "main": "index.js",
+  "dependencies": {
+    "@google-cloud/functions-framework": "^3.0.0",
+    "pg": "^8.11.3"
+  }
+}
