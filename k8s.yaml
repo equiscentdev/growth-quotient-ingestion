@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: growth-quotient-ingestion
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: growth-quotient-ingestion
+  template:
+    metadata:
+      labels:
+        app: growth-quotient-ingestion
+    spec:
+      containers:
+      - name: app
+        image: growth-quotient-ingestion:latest
