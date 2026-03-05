@@ -3,12 +3,12 @@ kind: Config
 metadata:
   name: growth-quotient-ingestion
 build:
-  googleCloudBuild:
-    projectId: null
   artifacts:
   - image: growth-quotient-ingestion
     docker:
       dockerfile: Dockerfile
+  googleCloudBuild:
+    projectId: cs-poc-h94wicd2pgi3dpfwznvm4vm
 manifests:
   rawYaml:
     - k8s.yaml
